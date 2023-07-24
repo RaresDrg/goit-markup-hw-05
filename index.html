@@ -27,7 +27,7 @@
         <nav class="website-navigation">
           <ul>
             <li>
-              <a class="active navigation-link" href="studio.html">Studio</a>
+              <a class="active navigation-link current-file" href="index.html">Studio</a>
             </li>
             <li>
               <a class="active navigation-link" href="portfolio.html"
@@ -66,7 +66,7 @@
       <section>
         <div class="container hero-section">
           <h1 class="hero-header">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-          <button class="cta-button" type="button">Request our service</button>
+          <button class="cta-button" type="button" data-modal-open>Request our service</button>
         </div>
       </section>
 
@@ -147,6 +147,9 @@
                 alt="typing code on keyboard"
                 width="370"
               >
+              <div class="overlay-text">
+                <h4>desktop apps</h4>
+              </div>
             </li>
             <li>
               <img
@@ -154,6 +157,9 @@
                 alt="mobile development"
                 width="370"
               >
+              <div class="overlay-text">
+                <h4>mobile apps</h4>
+              </div>
             </li>
             <li>
               <img
@@ -161,6 +167,9 @@
                 alt="choosing a color from a palette"
                 width="370"
               >
+              <div class="overlay-text">
+                <h4>design solutions</h4>
+              </div>
             </li>
           </ul>
         </div>
@@ -415,5 +424,18 @@
 
       </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-button" type="button" data-modal-close>
+          <svg>
+            <use href="images/icons/icons.svg#icon-close_button"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
